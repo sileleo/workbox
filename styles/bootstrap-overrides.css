@@ -76,6 +76,10 @@ footer .alignLeft {
 
 /*--- Bootstrap Overrides ---*/
  
+a {
+    color: #957512;
+}
+
 mark {
     background-color: #F0C12E;
 }
@@ -86,6 +90,38 @@ mark {
 
 .nav-link:hover {
     border-bottom: 0;
+}
+
+.btn-primary {
+    background-color: #d8a814;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 1s;
+}
+  
+.btn-primary:hover {
+    background-color: #000;
+}
+
+.btn-secondary {
+    background-color: #949494;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 1s;
+}
+  
+.btn-secondary:hover {
+    background-color: #4E4E4E;
 }
 
 
@@ -175,7 +211,7 @@ mark {
         font-size: 40px;
         top: 15%;
         left: 5%;
-    }  
+    } 
 
     /* --- Footer ---*/
     
@@ -194,7 +230,16 @@ mark {
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 991px) {
+
+    /* --- Contact ---*/
+
+    .contactSection__form {
+        border-right: 1px solid #c0c0c0;
+    }
+}
+
+@media (min-width: 1300px) {
 
     /* --- Home ---*/
 
@@ -204,4 +249,4 @@ mark {
         top: 15%;
         left: 60%;
     }  
-)
+}
