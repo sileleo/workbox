@@ -1,3 +1,5 @@
+/* --- Variables ---*/
+/* --- Styles --- */
 header {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -19,7 +21,7 @@ header {
 }
 
 .heroSection__text {
-  background-color: rgba(0, 0, 0, 0.7803921569);
+  background-color: #000;
   position: absolute;
   font-size: 18px;
   line-height: 30px;
@@ -42,6 +44,11 @@ header {
 
 .locationDescription {
   padding-top: 30px;
+}
+
+/* --- Benefits Section ---*/
+.benefitBox {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 /* --- Footer --- */
@@ -180,6 +187,10 @@ mark {
     font-size: 40px;
     top: 15%;
     left: 5%;
+  }
+  /* --- Benefits ---*/
+  .benefitItems {
+    margin-top: 30px;
   }
   /* --- Footer ---*/
   footer .alignLeft {
