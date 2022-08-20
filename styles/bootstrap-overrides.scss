@@ -1,10 +1,14 @@
+@import "./partials/_variables.scss";
+@import "./partials/_home.scss";
+
+/* --- Styles --- */
 header {
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .text-highlighted {
-    color: #d8a814;
+    color: $primary-color;
 }
 
 /* --- Home ---*/
@@ -16,11 +20,11 @@ header {
     background-position: center;
     height: 276px;
     position: relative;
-    border-bottom: 6px solid #d8a814;
+    border-bottom: 6px solid $primary-color;
 }
 
 .heroSection__text {
-    background-color:#000000c7;
+    background-color:#000;
     position: absolute;
     font-size: 18px;
     line-height: 30px;
@@ -43,6 +47,12 @@ header {
 
 .locationDescription {
     padding-top: 30px;
+}
+
+/* --- Benefits Section ---*/
+
+.benefitBox {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 /* --- Footer --- */
@@ -77,7 +87,7 @@ footer {
 /*--- Bootstrap Overrides ---*/
  
 a {
-    color: #957512;
+    color: $links-color;
 }
 
 mark {
@@ -93,7 +103,7 @@ mark {
 }
 
 .btn-primary {
-    background-color: #d8a814;
+    background-color: $primary-color;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -211,6 +221,12 @@ mark {
         top: 15%;
         left: 5%;
     } 
+
+    /* --- Benefits ---*/
+
+    .benefitItems {
+        margin-top: 30px;
+    }
 
     /* --- Footer ---*/
     
