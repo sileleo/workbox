@@ -10,178 +10,255 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
-        <!-- Styles -->
-        <link rel="stylesheet" href="../styles/styles.css">
+        <!-- My Styles 
+        <link rel="stylesheet" href="styles/styles.css">
+        -->
+        <!-- CSS only - Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        
+        <!-- Bootstrap Overrides -->
+        <link rel="stylesheet" type="text/css" href="../styles/bootstrap-overrides.css">
+
         <title>Calendario de eventos</title>
     </head>
     <body>
-        <header>
-            <!-- To be fixed - img size -->
-            <a href="../index.html">
-                <img src="../images/logo.png" alt="WorkBOX" width="200px">
-            </a>            
-            <!-- Menu -->
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="../index.html">EL COWORK</a></li>
-                    <li><a href="membresias.html">MEMBRESIAS</a></li>
-                    <li><a href="beneficios.html">BENEFICIOS</a></li>
-                    <li class="selected"><a href="eventos.html">EVENTOS</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
+        <header class="sticky-top bd-navbar">
+            <nav class="container-xxl navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/logo.png" alt="WorkBOX" width="160px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav ms-md-auto" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">EL COWORK</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="membresias.html">MEMBRESIAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="beneficios.html">BENEFICIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="eventos.html">EVENTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="faqs.html">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
-            <div class="wrapper">
-                <section>
-                    <h1>Agenda de eventos <span class="text-highlighted">WorkBox</span></h1>
-                    <h2 class="text-shortened">Para nuestros miembros y la comunidad creativa en general, WorkBOX es un punto de convergencia de movimientos culturales importantes y emergentes.</h2>
-                    <h2><strong class="text-highlighted">WorkBOX es donde se mueven las ideas.</strong></h2>
-                    </p>
-                    <h3 class="eventsMonth__divider">Agosto</h3>
-                    <div class="eventSection">
-                        <div class="eventBox">
-                            <div class="eventBox__img">
-                                <img src="../images/benditorufian.jpeg" alt="WorkBOX" width="400px">
-                            </div>
-                            <div class="eventBox__content">
-                                <h6>11/08 - 12.30</h6>
-                                <h3>Evento Uno</h3>
-                                <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
-                                <form action="">
-                                    <input type="button" value="RESERVAR LUGAR" class="primaryButton">
-                                </form>
+            <section class="eventSection">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-9 col-lg-12 col-md-12 col-sm-12">
+                            <h1 class="mt-5">Agenda de eventos <span class="text-highlighted">WorkBox</span></h1>
+                            <h3 class="text-subtle">Para nuestros miembros y la comunidad creativa en general, WorkBOX es un punto de convergencia de movimientos culturales importantes y emergentes.</h3>
+                            <h3><strong class="text-highlighted">WorkBOX es donde se mueven las ideas.</strong></h3>
+                        </div>
+                    </div>
+
+                    <div class="row sticky-month my-5 rounded">
+                        <h6 class="text-subtle">AGOSTO</h6>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <!-- Event item -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6">
+                                        <img src="../images/benditorufian.jpeg" class="img-event">
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6">
+                                        <div class="p-3">
+                                            <h6 class="text-subtle">11/08 - 12.30</h6>
+                                            <h3>Evento 2</h3>
+                                            <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
+                                            <form action="">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="eventBox">
-                            <div class="eventBox__img">
-                                <img src="../images/benditorufian.jpeg" alt="WorkBOX" width="400px">
-                            </div>
-                            <div class="eventBox__content">
-                                <h6>11/08 - 12.30</h6>
-                                <h3>Evento 2</h3>
-                                <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
-                                <form action="">
-                                    <input type="button" value="RESERVAR LUGAR" class="primaryButton">
-                                </form>
+
+                        <!-- Event item -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6">
+                                        <img src="../images/benditorufian.jpeg" class="img-event">
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6">
+                                        <div class="p-3">
+                                            <h6 class="text-subtle">11/08 - 12.30</h6>
+                                            <h3>Evento 2</h3>
+                                            <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
+                                            <form action="">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="eventBox">
-                            <div class="eventBox__img">
-                                <img src="../images/benditorufian.jpeg" alt="WorkBOX" width="400px">
-                            </div>
-                            <div class="eventBox__content">
-                                <h6>11/08 - 12.30</h6>
-                                <h3>Evento 3</h3>
-                                <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
-                                <form action="">
-                                    <input type="button" value="RESERVAR LUGAR" class="primaryButton">
-                                </form>
+
+                        <!-- Event item -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6">
+                                        <img src="../images/benditorufian.jpeg" class="img-event">
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6">
+                                        <div class="p-3">
+                                            <h6 class="text-subtle">11/08 - 12.30</h6>
+                                            <h3>Evento 2</h3>
+                                            <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
+                                            <form action="">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <h3 class="eventsMonth__divider">Septiembre</h3>
-                    <div class="eventSection">
-                        <div class="eventBox">
-                            <div class="eventBox__img">
-                                <img src="../images/benditorufian.jpeg" alt="WorkBOX" width="400px">
-                            </div>
-                            <div class="eventBox__content">
-                                <h6>11/08 - 12.30</h6>
-                                <h3>Evento 4</h3>
-                                <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
-                                <form action="">
-                                    <input type="button" value="RESERVAR LUGAR" class="primaryButton">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="eventBox">
-                            <div class="eventBox__img">
-                                <img src="../images/benditorufian.jpeg" alt="WorkBOX">
-                            </div>
-                            <div class="eventBox__content">
-                                <h6>11/08 - 12.30</h6>
-                                <h3>Evento 5</h3>
-                                <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
-                                <form action="">
-                                    <input type="button" value="RESERVAR LUGAR" class="primaryButton">
-                                </form>
+
+                    <div class="row sticky-month rounded my-5">
+                        <h6 class="text-subtle">SEPTIEMBRE</h6>
+                    </div>
+                    <div class="row g-4">
+                        <!-- Event item -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6">
+                                        <img src="../images/benditorufian.jpeg" class="img-event">
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6">
+                                        <div class="p-3">
+                                            <h6 class="text-subtle">11/08 - 12.30</h6>
+                                            <h3>Evento 2</h3>
+                                            <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
+                                            <form action="">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="eventBox">
-                            <div class="eventBox__img">
-                                <img src="../images/benditorufian.jpeg" alt="WorkBOX">
-                            </div>
-                            <div class="eventBox__content">
-                                <h6>11/08 - 12.30</h6>
-                                <h3>Evento 6</h3>
-                                <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
-                                <form action="">
-                                    <input type="button" value="RESERVAR LUGAR" class="primaryButton">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="eventBox">
-                            <div class="eventBox__img">
-                                <img src="../images/benditorufian.jpeg" alt="WorkBOX">
-                            </div>
-                            <div class="eventBox__content">
-                                <h6>11/08 - 12.30</h6>
-                                <h3>Evento 7</h3>
-                                <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
-                                <form action="">
-                                    <input type="button" value="RESERVAR LUGAR" class="primaryButton">
-                                </form>
+
+                        <!-- Event item -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6">
+                                        <img src="../images/benditorufian.jpeg" class="img-event">
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6">
+                                        <div class="p-3">
+                                            <h6 class="text-subtle">11/08 - 12.30</h6>
+                                            <h3>Evento 2</h3>
+                                            <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
+                                            <form action="">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="eventBox">
-                            <div class="eventBox__img">
-                                <img src="../images/benditorufian.jpeg" alt="WorkBOX">
-                            </div>
-                            <div class="eventBox__content">
-                                <h6>11/08 - 12.30</h6>
-                                <h3>Evento 8</h3>
-                                <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
-                                <form action="">
-                                    <input type="button" value="RESERVAR LUGAR" class="primaryButton">
-                                </form>
+
+                        <!-- Event item -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6">
+                                        <img src="../images/benditorufian.jpeg" class="img-event">
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6">
+                                        <div class="p-3">
+                                            <h6 class="text-subtle">11/08 - 12.30</h6>
+                                            <h3>Evento 2</h3>
+                                            <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
+                                            <form action="">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
         </main>
-        <section class="highlightedSection">
-            <div class="wrapper text-center">        
-                <h1>Organizá tu evento con nosotros</h1>
+        <section class="highlightedSection py-5 mt-5">
+            <div class="container text-center">       
+                <h1 class="mb-5">Organizá tu evento con nosotros</h1>
                 <p>Workbox te ofrece la posibilidad de poder realizar diversos eventos, tales como seminarios, <br/>reuniones empresariales, conferencias y mucho más.</p>
                 <br />
                 <form action="">
-                    <input type="button" value="RESERVAR FECHA" class="primaryButton">
+                    <input type="button" value="RESERVAR FECHA" class="btn btn-primary">
                 </form>
             </div>
         </section>
         <footer>
-            <a href="../index.html">
-                <img src="../images/iso-workbox.png" alt="WorkBOX Logo">
-            </a>
-            <nav class="footer__nav">
-                <ul class="speciaList">
-                    <li><a href="../index.html">EL COWORK</a></li>
-                    <li><a href="membresias.html">MEMBRESIAS</a></li>
-                    <li><a href="beneficios.html">BENEFICIOS</a></li>
-                    <li><a href="eventos.html">EVENTOS</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <a href="https://instagram.com/workboxmza" target="_blank">Instagram</a> |
-            <!-- Falta crear la red social para sumar link correcto -->
-            <a href="">Twitter</a>
-            <hr>
-            <p><strong>Copyright © 2022 WorkBOX</strong>. Todos los derechos reservados.</p>
-            <p>La Barraca Mall - Dorrego Mendoza, Las Cañas 1833, M5526</p>
+            <div class="container">
+                <div class="row">
+                    <a href="../index.html">
+                        <img class="mb-4" src="../images/iso-workbox.png" alt="WorkBOX Logo">
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-xs-12">
+                        <nav class="footer__nav">
+                            <ul class="list-unstyled footerList">
+                                <li><a class="list-inline-item" href="../index.html">EL COWORK</a></li>
+                                <li><a href="beneficios.html">BENEFICIOS</a></li>
+                                <li><a href="eventos.html">EVENTOS</a></li>
+                                <li><a href="membresias.html">MEMBRESIAS</a></li>
+                                <li><a href="contacto.html">CONTACTO</a></li>
+                                <li><a href="faqs.html">FAQs</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 alignLeft">
+                        <nav class="footer__nav">
+                            <ul class="list-unstyled footerList">
+                                <li><a href="">Twitter</a></li>
+                                <li><a href="https://instagram.com/workboxmza" target="_blank">Instagram</a></li>
+                            </ul>
+                        </nav>                      
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6 col-xs-12">
+                        <p><strong>Copyright © 2022 WorkBOX</strong>. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 alignLeft">
+                        <p>La Barraca Mall - Dorrego Mendoza, Las Cañas 1833, M5526</p>                
+                    </div>
+                </div>
+            </div>
         </footer>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 </html>
