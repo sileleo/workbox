@@ -1,0 +1,54 @@
+/*--- Bootstrap Overrides ---*/
+ 
+a {
+    color: $links-color;
+}
+
+mark {
+    background-color: #F0C12E;
+}
+
+.nav-link {
+    transition: none;
+}
+
+.nav-link:hover {
+    border-bottom: 0;
+}
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: white;
+
+    &:hover {
+        background-color: #000;
+    }
+}
+
+.btn-secondary {
+    background-color: #949494;
+    color: #fff;
+
+    &:hover {
+        background-color: #4E4E4E;
+    }
+}
+
+/* ------ Media Queries ------*/
+
+@media (min-width: 900px) {
+    .nav-link:hover {
+        border-bottom: 3px solid #F0C12E;
+    }
+
+    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+        border-bottom: 3px solid #F0C12E;
+    }
+}
