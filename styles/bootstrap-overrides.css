@@ -241,16 +241,6 @@ mark {
         top: 15%;
         left: 5%;
     } 
-
-    /* --- Bootstrap Overrides ---*/
-
-    .nav-link:hover {
-        border-bottom: 3px solid #F0C12E;
-    }
-
-    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-        border-bottom: 3px solid #F0C12E;
-    }
     
     /* --- Footer ---*/
     footer .alignLeft {
@@ -266,7 +256,17 @@ mark {
     }
 
     .contactSection__form {
-      border-right: 1px solid #c0c0c0;
+        border-right: 1px solid #c0c0c0;
+    }
+
+    /* --- Bootstrap Overrides ---*/
+
+    .nav-link:hover {
+        border-bottom: 3px solid #F0C12E;
+    }
+
+    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+        border-bottom: 3px solid #F0C12E;
     }
 }
 
