@@ -1,4 +1,7 @@
-/* --- Variables ---*/ /* --- Footer --- */
+/* --- Variables ---*/
+/* --- Yellow ---*/
+/* --- Grey ---*/
+/* --- Footer --- */
 footer {
   color: #fff;
   background-color: #000;
@@ -70,7 +73,7 @@ mark {
 
 .btn-primary {
   background-color: #d8a814;
-  color: white;
+  color: #fff;
 }
 .btn-primary:hover {
   background-color: #000;
@@ -122,7 +125,7 @@ mark {
 }
 
 .heroSection__text {
-  background-color: rgba(0, 0, 0, 0.7803921569);
+  background-color: #000;
   position: absolute;
   font-size: 18px;
   line-height: 30px;

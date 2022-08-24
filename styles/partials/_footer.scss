@@ -7,7 +7,7 @@ footer {
     padding: 50px 15px;
 
     hr {
-        border: 0.5px solid #FEDB74;
+        border: 0.5px solid $yellow-two;
         margin: 30px 0;
         opacity: 1;
     }
@@ -18,7 +18,7 @@ footer {
         font-weight: 400;
 
         &:hover {
-            color:#FEDB74;
+            color: $yellow-two;
         }
     }
 
@@ -32,7 +32,7 @@ footer {
 @media (min-width: 768px) {
     .footerList li {
         display:inline-block;
-        border-right: 1px solid #FEDB74;
+        border-right: 1px solid $yellow-two;
         padding-right: 0.5rem;
 
         &:nth-last-child(1) {

@@ -5,7 +5,7 @@ a {
 }
 
 mark {
-    background-color: #F0C12E;
+    background-color: $yellow-one;
 }
 
 .nav-link {
@@ -25,7 +25,7 @@ mark {
 
 .btn-primary {
     background-color: $primary-color;
-    color: white;
+    color: #fff;
 
     &:hover {
         background-color: #000;
@@ -33,11 +33,11 @@ mark {
 }
 
 .btn-secondary {
-    background-color: #949494;
+    background-color: $secondary-color;
     color: #fff;
 
     &:hover {
-        background-color: #4E4E4E;
+        background-color: $grey-two;
     }
 }
 
@@ -45,10 +45,10 @@ mark {
 
 @media (min-width: 900px) {
     .nav-link:hover {
-        border-bottom: 3px solid #F0C12E;
+        border-bottom: 3px solid $yellow-one;
     }
 
     .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-        border-bottom: 3px solid #F0C12E;
+        border-bottom: 3px solid $yellow-one;
     }
 }
