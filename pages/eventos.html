@@ -60,9 +60,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xxl-9 col-lg-12 col-md-12 col-sm-12">
-                            <h1 class="mt-5">Agenda de eventos <span class="text-highlighted">WorkBox</span></h1>
-                            <h3 class="text-subtle">Para nuestros miembros y la comunidad creativa en general, WorkBOX es un punto de convergencia de movimientos culturales importantes y emergentes.</h3>
-                            <h3><strong class="text-highlighted">WorkBOX es donde se mueven las ideas.</strong></h3>
+                            <h1 class="mt-5">Agenda de eventos <span class="textHighlighted">WorkBox</span></h1>
+                            <h3 class="text-subtle light-header">Para nuestros miembros y la comunidad creativa en general, WorkBOX es un punto de convergencia de movimientos culturales importantes y emergentes.</h3>
+                            <h3 class="mt-4"><strong class="textHighlighted">WorkBOX es donde se mueven las ideas.</strong></h3>
                         </div>
                     </div>
 
@@ -73,18 +73,18 @@
                     <div class="row g-4">
                         <!-- Event item -->
                         <div class="col-lg-6 col-md-6">
-                            <div class="card">
+                            <div class="cardAnimated">
                                 <div class="row">
                                     <div class="col-xxl-5 col-lg-6">
-                                        <img src="../images/benditorufian.jpeg" class="img-event">
+                                        <img src="../images/montalto.jpeg" class="img-event">
                                     </div>
                                     <div class="col-xxl-7 col-lg-6">
                                         <div class="p-3">
                                             <h6 class="text-subtle">11/08 - 12.30</h6>
-                                            <h4>Evento 1</h4>
-                                            <p>Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo!</p>
+                                            <h4>Javier Montalto en Mendoza</h4>
+                                            <p>El reconocido compositor se suma a nuestro espacio de trabajo para celebrar su apertura. No te lo podes perder este próximo jueves por la noche!</p>
                                             <form action="">
-                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                             </form>
                                         </div>
                                     </div>
@@ -94,7 +94,7 @@
 
                         <!-- Event item -->
                         <div class="col-lg-6 col-md-6">
-                            <div class="card">
+                            <div class="cardAnimated">
                                 <div class="row">
                                     <div class="col-xxl-5 col-lg-6">
                                         <img src="../images/benditorufian.jpeg" class="img-event">
@@ -115,7 +115,7 @@
 
                         <!-- Event item -->
                         <div class="col-lg-6 col-md-6">
-                            <div class="card">
+                            <div class="cardAnimated">
                                 <div class="row">
                                     <div class="col-xxl-5 col-lg-6">
                                         <img src="../images/benditorufian.jpeg" class="img-event">
@@ -141,7 +141,7 @@
                     <div class="row g-4">
                         <!-- Event item -->
                         <div class="col-lg-6 col-md-6">
-                            <div class="card">
+                            <div class="cardAnimated">
                                 <div class="row">
                                     <div class="col-xxl-5 col-lg-6">
                                         <img src="../images/benditorufian.jpeg" class="img-event">
@@ -162,7 +162,7 @@
 
                         <!-- Event item -->
                         <div class="col-lg-6 col-md-6">
-                            <div class="card">
+                            <div class="cardAnimated">
                                 <div class="row">
                                     <div class="col-xxl-5 col-lg-6">
                                         <img src="../images/benditorufian.jpeg" class="img-event">
@@ -183,7 +183,7 @@
 
                         <!-- Event item -->
                         <div class="col-lg-6 col-md-6">
-                            <div class="card">
+                            <div class="cardAnimated">
                                 <div class="row">
                                     <div class="col-xxl-5 col-lg-6">
                                         <img src="../images/benditorufian.jpeg" class="img-event">
@@ -207,10 +207,9 @@
         </main>
         <section class="highlightedSection py-5 mt-5">
             <div class="container text-center">       
-                <h1 class="mb-5">Organizá tu evento con nosotros</h1>
-                <p>Workbox te ofrece la posibilidad de poder realizar diversos eventos, tales como seminarios, <br/>reuniones empresariales, conferencias y mucho más.</p>
-                <br />
-                <form action="">
+                <h1 class="mb-3">Organizá tu evento con nosotros</h1>
+                <h5>Workbox te ofrece la posibilidad de poder realizar diversos eventos, tales como seminarios, <br/>reuniones empresariales, conferencias y mucho más.</h5>
+                <form action="" class="mt-4">
                     <input type="button" value="RESERVAR FECHA" class="btn btn-primary">
                 </form>
             </div>
@@ -255,6 +254,38 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Off canvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <h4 class="offcanvas-title textHighlighted mb-3" id="offcanvasExampleLabel">Javier Montalto en Mendoza</h4>
+                <p>Javier es un músico compositor solista y productor mendocino, ex integrante de Chocogüon</p><p>En esta oportunidad vuelve a Mendoza para presentar su nuevo material tras su primer disco “El Hombre Elefante”. Además, trabaja produciendo a otros artistas.</p>
+                <hr>
+                <h5 class="my-4">Quiero reservar mi lugar</h5>
+                <form action="">
+                    <label for="formName" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control mb-3" id="formName" placeholder="Pablo Arce">
+
+                    <label for="formEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control mb-3" id="formEmail" placeholder="pabloarce@gmail.com">
+
+                    <label for="formMembership" class="form-label">Número de entradas</label>
+                    <select class="form-select mb-3" aria-label="Default select example">
+                        <option selected value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <button class="btn btn-primary">Reservar mi lugar!</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        <!-- End off canvas -->
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

@@ -3,20 +3,9 @@
 @import "./partials/_header.scss";
 @import "./partials/_bootstrap-overrides.scss";
 @import "./partials/_highlights.scss";
+@import "./partials/_typography.scss";
 @import "./partials/_home.scss";
 @import "./partials/_events.scss";
+@import "./partials/_benefits.scss";
 @import "./partials/_contact.scss";
 
-
-
-/* test
-.animated {
-    opacity: 1;
-    animation: fade 1s linear;
-}
-
-@keyframes fade {
-  0% { opacity: 0 }
-  100% { opacity: 1 }
-}
-*/

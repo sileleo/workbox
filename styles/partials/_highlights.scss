@@ -1,6 +1,6 @@
 /* --- Highlights ---*/
 
-.text-highlighted {
+.textHighlighted {
     color: $primary-color;
 }
 
@@ -8,8 +8,12 @@
     color: $grey-one;
 }
 
-.box-highlighted {
+.cardHighlighted {
     background-color: $terciary-color;
+}
+
+.cardHighlighted-2 {
+    background-color: $grey-four;
 }
 
 .highlightedSection {

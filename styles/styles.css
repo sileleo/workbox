@@ -70,6 +70,17 @@ mark {
   cursor: pointer;
   text-transform: uppercase;
 }
+.btn:focus {
+  background-color: #d8a814;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.btn:active:focus {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btn-check:focus + .btn {
+  background-color: #d8a814;
+}
 
 .btn-primary {
   background-color: #d8a814;
@@ -87,6 +98,48 @@ mark {
   background-color: #4E4E4E;
 }
 
+.cardAnimated {
+  border: 0;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow;
+}
+.cardAnimated:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.offcanvas-header {
+  justify-content: right;
+}
+
+.carousel-inner {
+  min-height: 390px;
+}
+
+.carousel-indicators {
+  position: relative;
+  display: block;
+  float: right;
+  margin: 0;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #d8a814;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1201px) {
+  .carousel-inner {
+    min-height: 420px;
+  }
+  .groups-list {
+    min-height: 375px;
+  }
+  .groups-list .cardAnimated {
+    min-height: 375px;
+  }
+}
 /* ------ Media Queries ------*/
 @media (min-width: 900px) {
   .nav-link:hover {
@@ -97,7 +150,7 @@ mark {
   }
 }
 /* --- Highlights ---*/
-.text-highlighted {
+.textHighlighted {
   color: #d8a814;
 }
 
@@ -105,12 +158,22 @@ mark {
   color: rgb(136, 136, 136);
 }
 
-.box-highlighted {
+.cardHighlighted {
   background-color: #fff4d2;
+}
+
+.cardHighlighted-2 {
+  background-color: #f2f2f2;
 }
 
 .highlightedSection {
   background-image: linear-gradient(to right, #fff, #e2c56c);
+}
+
+/* Typography */
+h3.light-header {
+  font-weight: 300;
+  line-height: 40px;
 }
 
 /* --- Home ---*/
@@ -150,6 +213,29 @@ mark {
   padding-top: 30px;
 }
 
+.animated {
+  opacity: 1;
+  -webkit-animation: fade 2s linear;
+          animation: fade 2s linear;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* -------------- MEDIA QUERIES -------------- */
 @media (min-width: 550px) {
   .heroSection {
@@ -238,20 +324,15 @@ mark {
     border-top-right-radius: 0;
   }
 }
+/*--- Benefits ---*/
+@media (min-width: 900px) {
+  .benefitItems {
+    margin-top: 30px;
+  }
+}
 /* --- Contact ---*/
 @media (min-width: 991px) {
   .contactSection__form {
     border-right: 1px solid #c0c0c0;
   }
-}
-/* test
-.animated {
-    opacity: 1;
-    animation: fade 1s linear;
-}
-
-@keyframes fade {
-  0% { opacity: 0 }
-  100% { opacity: 1 }
-}
-*//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

@@ -36,6 +36,16 @@
     padding-top: 30px;
 }
 
+.animated {
+    opacity: 1;
+    animation: fade 2s linear;
+}
+
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
 /* -------------- MEDIA QUERIES -------------- */
 
 @media (min-width: 550px) {
