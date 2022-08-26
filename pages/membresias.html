@@ -158,7 +158,7 @@
                                 <div class="carousel-item active" data-bs-interval="5000">
                                     <div class="container mt-2">
                                         <div class="row">
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPaseDiario" aria-controls="offcanvasPaseDiario">
                                                 <div class="cardAnimated p-3">
                                                     Pase por el día
                                                     <h3><spam class="textHighlighted">$2.550</spam> + IVA / Día</h3>
@@ -298,7 +298,33 @@
             </div>
         </footer>
 
-        <!-- Off canvas -->
+        <!-- Off canvas Reservar Lugar -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasPaseDiario" aria-labelledby="offcanvasPaseDiario">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <h4 class="offcanvas-title textHighlighted mb-3" id="offcanvasExampleLabel">Formulario de inscripción</h4>
+                <p>Reservá tu pase diario por sólo <strong>2.550 + IVA/ Mes</strong>. Podés pagar usando visa, mastercard, transferencia bancaria o Mercado Pago.</p>
+                <hr>
+                <h5 class="my-4">Datos de la reserva</h5>
+                <form action="">
+                    <label for="formName" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control mb-3" id="formName" placeholder="Pablo Arce">
+
+                    <label for="formEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control mb-3" id="formEmail" placeholder="pabloarce@gmail.com">
+
+                    <button class="btn btn-primary mt-4">Reservar mi lugar!</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        <!-- End off canvas -->
+
+
+        <!-- Off canvas Reserva Mes -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
