@@ -5,6 +5,7 @@
     height: 100%;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    min-height: 236px;
 }
 
 .sticky-month {
@@ -19,9 +20,50 @@
 
 /* ------ Media Queries ------*/
 
+@media (min-width: 700px) {
+    .eventSection {
+        .cardAnimated {
+            min-height: 460px;
+        }
+    }
+}
+
 @media (min-width: 991px) {
     .img-event {
+        min-height: 305px;
+        max-height: 305px;
         border-bottom-left-radius: 4px;
         border-top-right-radius: 0;
+    }
+
+    .eventSection {
+        .cardAnimated {
+            min-height: 305px;
+        }
+    }
+}
+
+@media (min-width:1100px) {
+    .img-event {
+        max-height: 236px;
+    }
+
+    .eventSection {
+        .cardAnimated {
+            min-height: 236px;
+        }
+    }
+}
+
+@media (min-width:1400px) {
+    .img-event {
+        max-height: 236px;
+        min-height: 236px;
+    }
+
+    .eventSection {
+        .cardAnimated {
+            min-height: 236px;
+        }
     }
 }
