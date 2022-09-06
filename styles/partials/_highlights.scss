@@ -1,21 +1,37 @@
 /* --- Highlights ---*/
 
 .textHighlighted {
-    color: $primary-color;
+    color: map-get($colors, primaryColor);
 }
 
 .text-subtle {
-    color: $grey-one;
+    color: map-get($colors, greyOne);
 }
 
+
 .cardHighlighted {
-    background-color: $terciary-color;
+    background-color: map-get($colors, terciaryColor);
 }
 
 .cardHighlighted-2 {
-    background-color: $grey-four;
+    background-color: map-get($colors, greyFour);
 }
 
 .highlightedSection {
-    background-image: linear-gradient(to right, #fff, $yellow-three);
+    background-image: linear-gradient(to right, #fff, map-get($colors, yellowThree));
+}
+
+
+/*--- Mixins test ---*/
+
+.cardFull {
+    @include cardAnimated (white);
+}
+
+.cardFull__highlighted {
+    @include cardAnimated ($terciary-color);
+}
+
+.cardFull__highlighted-2 {
+    @include cardAnimated ($grey-four);
 }

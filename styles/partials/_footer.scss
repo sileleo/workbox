@@ -18,7 +18,7 @@ footer {
         font-weight: 400;
 
         &:hover {
-            color: $yellow-two;
+            color: map-get($colors ,yellowTwo);
         }
     }
 

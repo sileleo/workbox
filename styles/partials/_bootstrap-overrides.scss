@@ -5,7 +5,7 @@ a {
 }
 
 mark {
-    background-color: $yellow-one;
+    background-color: map-get($colors, yellowOne);
 }
 
 .nav-link {
@@ -16,35 +16,17 @@ mark {
     border-bottom: 0;
 }
 
-.btn {
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-transform: uppercase;
-
-    &:focus {
-        background-color: $primary-color;
-        box-shadow: $primary-shadow;
-    }
-
-    &:active {
-        &:focus {
-            box-shadow: $shadow;
-        }
-    }
-}
-
 .btn-check {
     &:focus {
         &+.btn {
-        background-color: $primary-color;
+        background-color: map-get($colors, primaryColor);
         }
     }
 }
 
 .btn-primary {
-    background-color: $primary-color;
-    color: #fff;
+    @extend %btnBasic;
+    background-color: map-get($colors, primaryColor);
 
     &:hover {
         background-color: #000;
@@ -52,22 +34,11 @@ mark {
 }
 
 .btn-secondary {
-    background-color: $secondary-color;
-    color: #fff;
+    @extend %btnBasic;
+    background-color: map-get($colors, secondaryColor);
 
     &:hover {
-        background-color: $grey-two;
-    }
-}
-
-.cardAnimated {
-    border: 0;
-    box-shadow: $primary-shadow;
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-
-    &:hover {
-        transform: scale(1.05);
-        box-shadow: $secondary-shadow;
+        background-color: map-get($colors, greyTwo);
     }
 }
 
@@ -86,7 +57,7 @@ mark {
     margin: 0;
 
     [data-bs-target] {
-        background-color: $primary-color;
+        background-color: map-get($colors, primaryColor);
         width: 15px;
         height: 15px;
         border-radius: 50%;

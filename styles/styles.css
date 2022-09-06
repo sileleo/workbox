@@ -1,7 +1,24 @@
 /* --- Variables ---*/
 /* --- Yellow ---*/
 /* --- Grey ---*/
-/* --- Footer --- */
+/*--- Maps ---*/ /* --- Extends --- */
+.btn-secondary, .btn-primary {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.btn-secondary:focus, .btn-primary:focus {
+  background-color: #d8a814;
+  box-shadow: primary-shadow;
+}
+.btn-secondary:active:focus, .btn-primary:active:focus {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* --- Mixins --- */ /* --- Footer --- */
 footer {
   color: #fff;
   background-color: #000;
@@ -64,27 +81,12 @@ mark {
   border-bottom: 0;
 }
 
-.btn {
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-.btn:focus {
-  background-color: #d8a814;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-}
-.btn:active:focus {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
 .btn-check:focus + .btn {
   background-color: #d8a814;
 }
 
 .btn-primary {
   background-color: #d8a814;
-  color: #fff;
 }
 .btn-primary:hover {
   background-color: #000;
@@ -92,20 +94,9 @@ mark {
 
 .btn-secondary {
   background-color: #949494;
-  color: #fff;
 }
 .btn-secondary:hover {
   background-color: #4E4E4E;
-}
-
-.cardAnimated {
-  border: 0;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow;
-}
-.cardAnimated:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 .offcanvas-header {
@@ -168,6 +159,40 @@ mark {
 
 .highlightedSection {
   background-image: linear-gradient(to right, #fff, #e2c56c);
+}
+
+/*--- Mixins test ---*/
+.cardFull {
+  background-color: white;
+  border: 0;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow;
+}
+.cardFull:hover {
+  transform: scale(1.05);
+  box-shadow: secondary-shadow;
+}
+
+.cardFull__highlighted {
+  background-color: #fff4d2;
+  border: 0;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow;
+}
+.cardFull__highlighted:hover {
+  transform: scale(1.05);
+  box-shadow: secondary-shadow;
+}
+
+.cardFull__highlighted-2 {
+  background-color: #f2f2f2;
+  border: 0;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow;
+}
+.cardFull__highlighted-2:hover {
+  transform: scale(1.05);
+  box-shadow: secondary-shadow;
 }
 
 /* Typography */
@@ -320,7 +345,7 @@ h3.light-header {
 
 /* ------ Media Queries ------*/
 @media (min-width: 700px) {
-  .eventSection .cardAnimated {
+  .eventSection .cardFull {
     min-height: 460px;
   }
 }
@@ -331,7 +356,7 @@ h3.light-header {
     border-bottom-left-radius: 4px;
     border-top-right-radius: 0;
   }
-  .eventSection .cardAnimated {
+  .eventSection .cardFull {
     min-height: 305px;
   }
 }
@@ -339,7 +364,7 @@ h3.light-header {
   .img-event {
     max-height: 236px;
   }
-  .eventSection .cardAnimated {
+  .eventSection .cardFull {
     min-height: 236px;
   }
 }
@@ -348,7 +373,7 @@ h3.light-header {
     max-height: 236px;
     min-height: 236px;
   }
-  .eventSection .cardAnimated {
+  .eventSection .cardFull {
     min-height: 236px;
   }
 }
