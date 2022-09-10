@@ -72,7 +72,73 @@
                         <h6 class="text-subtle">AGOSTO</h6>
                     </div>
                     
-                    <div class="row g-4">
+                    <!-- List only visible for smaller devices -->
+                    <div class="row g-4 d-lg-none">
+                        <!-- Event item -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6">
+                                        <img src="../images/montalto.png" class="img-event">
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6">
+                                        <div class="p-3">
+                                            <h6 class="text-subtle">11/08 - 12.30</h6>
+                                            <h4>Javier Montalto en Mendoza</h4>
+                                            <p>El reconocido compositor se suma a nuestro espacio de trabajo para celebrar su apertura!</p>
+                                            <form action="">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMontalto" aria-controls="offcanvasMontalto">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event item -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6">
+                                        <img src="../images/benditorufian.jpeg" class="img-event">
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6">
+                                        <div class="p-3">
+                                            <h6 class="text-subtle">11/08 - 12.30</h6>
+                                            <h4>Presentación Bendito Rufian</h4>
+                                            <p>El reconocido bar presenta su chef y su famosa carta enfocada en las especialidades mendocinas.</p>
+                                            <form action="">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBendito" aria-controls="offcanvasBendito">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event item -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6">
+                                        <img src="../images/books.png" class="img-event">
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6">
+                                        <div class="p-3">
+                                            <h6 class="text-subtle">11/08 - 12.30</h6>
+                                            <h4>Lectura de libros para niños</h4>
+                                            <p>Veni a divertirte en la lectura de cuentos para niños de primavera!</p>
+                                            <form action="">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLectura" aria-controls="offcanvasLectura">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Events list only visible for larger devices -->
+                    <div class="row g-4 d-xs-none">
                         <!-- Event item -->
                         <div class="col-lg-6 col-md-6">
                             <div class="cardAnimated">
@@ -86,7 +152,7 @@
                                             <h4>Javier Montalto en Mendoza</h4>
                                             <p>El reconocido compositor se suma a nuestro espacio de trabajo para celebrar su apertura!</p>
                                             <form action="">
-                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMontalto" aria-controls="offcanvasMontalto">
                                             </form>
                                         </div>
                                     </div>
@@ -107,7 +173,7 @@
                                             <h4>Presentación Bendito Rufian</h4>
                                             <p>El reconocido bar presenta su chef y su famosa carta enfocada en las especialidades mendocinas.</p>
                                             <form action="">
-                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBendito" aria-controls="offcanvasBendito">
                                             </form>
                                         </div>
                                     </div>
@@ -128,7 +194,7 @@
                                             <h4>Lectura de libros para niños</h4>
                                             <p>Veni a divertirte en la lectura de cuentos para niños de primavera!</p>
                                             <form action="">
-                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary">
+                                                <input type="button" value="RESERVAR LUGAR" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLectura" aria-controls="offcanvasLectura">
                                             </form>
                                         </div>
                                     </div>
@@ -151,7 +217,7 @@
                 <h1 class="mb-3">Organizá tu evento con nosotros</h1>
                 <h5>Workbox te ofrece la posibilidad de poder realizar diversos eventos, tales como seminarios, <br/>reuniones empresariales, conferencias y mucho más.</h5>
                 <form action="" class="mt-4">
-                    <input type="button" value="RESERVAR FECHA" class="btn btn-primary">
+                    <input type="button" value="RESERVAR FECHA" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasLectura">
                 </form>
             </div>
         </section>
@@ -196,24 +262,75 @@
             </div>
         </footer>
 
-        <!-- Off canvas Reservar Lugar -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <!-- Off canvas Reservar Lugar Javier Montalto -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMontalto" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Javier Montalto en Mendoza</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
             </div>
             <div class="offcanvas-body">
-              <div>
-                <h4 class="offcanvas-title textHighlighted mb-3" id="offcanvasExampleLabel">Javier Montalto en Mendoza</h4>
-                <p>Javier es un músico compositor solista y productor mendocino, ex integrante de Chocogüon</p><p>En esta oportunidad vuelve a Mendoza para presentar su nuevo material tras su primer disco “El Hombre Elefante”. Además, trabaja produciendo a otros artistas.</p>
-                <hr>
-                <h5 class="my-4">Quiero reservar mi lugar</h5>
+                <div class="mt-2">
+                    <p><strong>Javier es un músico compositor solista y productor mendocino, ex integrante de Chocogüon.</strong> En esta oportunidad vuelve a Mendoza para presentar su nuevo material tras su primer disco “El Hombre Elefante”. Además, trabaja produciendo a otros artistas.</p>
+                    <hr class="mt-4 mb-5">
+                    <h5 class="mb-4">Quiero reservar mi lugar</h5>
+                    <form action="">
+                        <label for="formDate" class="form-label">Fecha</label>
+                        <input class="form-control mb-3" type="text" value="11 de Agosto -  12.30hs" aria-label="11 de Agosto -  12.30hs" disabled readonly>
+
+                        <label for="formName" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control mb-3" id="formName" placeholder="Pablo Arce">
+
+                        <label for="formEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control mb-3" id="formEmail" placeholder="pabloarce@gmail.com">
+        
+                        <label for="formMembership" class="form-label">Número de entradas</label>
+                        <select class="form-select mb-3" aria-label="Default select example">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <div class="d-grid">
+                            <button class="btn btn-primary mt-3">Reservar mi lugar!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+        <!-- End off canvas -->
+
+        <!-- Off canvas Reservar Bendito Rufian -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasBendito" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Presentación Bendito Rufián</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <p>Bendito Rufián presenta su nuevo menú y con una cata de la exclusiva carta del chef Martín Fernandez.</p>
+                <hr class="mt-4 mb-5">
+                <h5 class="mb-4">Quiero reservar mi lugar</h5>
                 <form action="">
+                    <label for="formDate" class="form-label">Fecha</label>
+                    <input class="form-control mb-3" type="text" value="11 de Agosto -  12.30hs" aria-label="11 de Agosto -  12.30hs" disabled readonly>
+
                     <label for="formName" class="form-label">Nombre y Apellido</label>
                     <input type="text" class="form-control mb-3" id="formName" placeholder="Pablo Arce">
-
+    
                     <label for="formEmail" class="form-label">Email</label>
                     <input type="email" class="form-control mb-3" id="formEmail" placeholder="pabloarce@gmail.com">
-
+    
                     <label for="formMembership" class="form-label">Número de entradas</label>
                     <select class="form-select mb-3" aria-label="Default select example">
                         <option selected value="1">1</option>
@@ -221,9 +338,42 @@
                         <option value="3">3</option>
                         <option value="4">4</option>
                     </select>
-                    <button class="btn btn-primary">Reservar mi lugar!</button>
+                    <button class="btn btn-primary mt-3">Reservar mi lugar!</button>
                 </form>
-              </div>
+            </div>
+          </div>
+        <!-- End off canvas -->
+
+        <!-- Off canvas Reservar Lugar Lectura de Libros-->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLectura" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h4 class="offcanvas-title textHighlighted" id="offcanvasExampleLabel">Lecturas de libros para niños</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">                
+                <p>Veni a divertirte en la lectura de cuentos para niños de primavera!</p>
+                <div class="mt-5">
+                    <h5 class="mb-4">Quiero reservar mi lugar</h5>
+                    <form action="">
+                        <label for="formDate" class="form-label">Fecha</label>
+                        <input class="form-control mb-3" type="text" value="11 de Agosto -  12.30hs" aria-label="11 de Agosto -  12.30hs" disabled readonly>
+
+                        <label for="formName" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control mb-3" id="formName" placeholder="Pablo Arce">
+    
+                        <label for="formEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control mb-3" id="formEmail" placeholder="pabloarce@gmail.com">
+    
+                        <label for="formMembership" class="form-label">Número de entradas</label>
+                        <select class="form-select mb-3" aria-label="Default select example">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <button class="btn btn-primary mt-3">Reservar mi lugar!</button>
+                    </form>
+                </div>
             </div>
           </div>
         <!-- End off canvas -->

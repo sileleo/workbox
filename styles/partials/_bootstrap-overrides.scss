@@ -72,7 +72,22 @@ mark {
 }
 
 .offcanvas-header {
-    justify-content: right;
+    background-image: linear-gradient(to right, $terciary-color, #fff);
+    padding: 30px;
+    color: $grey-two;
+    box-shadow: $shadow;
+
+    .btn-close {
+        float:right;
+        margin-top: 2px;
+    }
+}
+
+.offcanvas-body {
+    padding: 30px; 
+    p {
+        color: $grey-one;
+    }
 }
 
 .carousel-inner {

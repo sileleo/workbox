@@ -109,7 +109,21 @@ mark {
 }
 
 .offcanvas-header {
-  justify-content: right;
+  background-image: linear-gradient(to right, #fff4d2, #fff);
+  padding: 30px;
+  color: #4E4E4E;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.offcanvas-header .btn-close {
+  float: right;
+  margin-top: 2px;
+}
+
+.offcanvas-body {
+  padding: 30px;
+}
+.offcanvas-body p {
+  color: rgb(136, 136, 136);
 }
 
 .carousel-inner {
@@ -201,8 +215,14 @@ h3.light-header {
   margin-bottom: 0;
 }
 
-.amenitiBox img {
-  width: 48px;
+.amenitiBox i {
+  font-size: 42px;
+  color: #d8a814;
+}
+.amenitiBox .card {
+  background-color: rgba(255, 232, 159, 0.231372549);
+  padding: 15px;
+  border-color: rgba(215, 167, 20, 0.4);
 }
 
 .locationSection iframe {

@@ -24,8 +24,17 @@
     margin-bottom: 0;
 }
 
-.amenitiBox img {
-    width: 48px;
+.amenitiBox {
+    i {
+        font-size: 42px;
+        color: $primary-color;
+    }
+
+    .card {
+        background-color: #ffe89f3b;
+        padding: 15px;
+        border-color: #d7a71466;
+    }
 }
 
 .locationSection iframe {
