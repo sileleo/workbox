@@ -83,28 +83,28 @@
                             </div>
                         </div>
 
-                        <div class="col-md-12">
+                        <div class="col-md-12" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPaseDiario" aria-controls="offcanvasPaseDiario">
                             <div class="card p-3">
                                 Pase por el día
                                 <h3><spam class="textHighlighted">$2.550</spam> + IVA / Día</h3>
                                 <p>Para aquellas personas que quieren utilizar nuestros servicios en el día.</p>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJornadaCompleta" aria-controls="offcanvasJornadaCompleta">
                             <div class="card p-3">
                                 Jornada completa
                                 <h3><spam class="textHighlighted">$18.000</spam> + IVA / Mes</h3>
                                 <p>Para quienes desean venir de Lunes a Viernes en cualquier horario.</p>
                             </div>
                         </div>     
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMediaJornada" aria-controls="offcanvasMediaJornada">
                             <div class="card cardHighlighted p-3">
                                 Media Jornada <strong>[Recomendada]</strong>
                                 <h3><spam class="textHighlighted">$11.700</spam> + IVA / Mes</h3>
                                 <p>Para aquellas personas que deseen asistir al cowork solamente media jornada</p>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12" data-bs-toggle="offcanvas" data-bs-target="#offcanvasOficinaPrivada" aria-controls="offcanvasOficinaPrivada">
                             <div class="card p-3">
                                 Oficina Privada
                                 <h3><spam class="textHighlighted">$42.000</spam> + IVA / Mes</h3>
@@ -118,7 +118,7 @@
                                 </ul>
                             </div>
                         </div>  
-                        <div class="col-md-12">
+                        <div class="col-md-12" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSalaReuniones" aria-controls="offcanvasSalaReuniones">
                             <div class="card p-3">
                                 Sala de reuniones
                                 <h3><spam class="textHighlighted">$1.700</spam> + IVA / Día</h3>
@@ -132,7 +132,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12" data-bs-toggle="offcanvas" data-bs-target="#offcanvasOficinaVirtual" aria-controls="offcanvasOficinaVirtual">
                             <div class="card p-3">
                                 Oficina virtual
                                 <h3><spam class="textHighlighted">$4.200</spam> + IVA / Día</h3>
@@ -167,14 +167,14 @@
                                                     <p>Para aquellas personas que quieren utilizar nuestros servicios en el día.</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasJornadaCompleta" aria-controls="offcanvasJornadaCompleta">
                                                 <div class="cardAnimated p-3">
                                                     Jornada completa
                                                     <h3><spam class="textHighlighted">$18.000</spam> + IVA / Mes</h3>
                                                     <p>Para quienes desean venir de Lunes a Viernes en cualquier horario.</p>
                                                 </div>
                                             </div>     
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMediaJornada" aria-controls="offcanvasMediaJornada">
                                                 <div class="cardAnimated cardHighlighted p-3">
                                                     Media Jornada <strong>[Recomendada]</strong>
                                                     <h3><spam class="textHighlighted">$11.700</spam> + IVA / Mes</h3>
@@ -199,7 +199,7 @@
                                 <div class="carousel-item groups-list" data-bs-interval="5000">
                                     <div class="container mt-2">
                                         <div class="row">
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasOficinaPrivada" aria-controls="offcanvasOficinaPrivada">
                                                 <div class="cardAnimated p-3">
                                                     Oficina Privada
                                                     <h3><spam class="textHighlighted">$42.000</spam> + IVA / Mes</h3>
@@ -213,7 +213,7 @@
                                                     </ul>
                                                 </div>
                                             </div>  
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSalaReuniones" aria-controls="offcanvasSalaReuniones">
                                                 <div class="cardAnimated p-3">
                                                     Sala de reuniones
                                                     <h3><spam class="textHighlighted">$1.700</spam> + IVA / Día</h3>
@@ -227,7 +227,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasOficinaVirtual" aria-controls="offcanvasOficinaVirtual">
                                                 <div class="cardAnimated p-3">
                                                     Oficina virtual
                                                     <h3><spam class="textHighlighted">$4.200</spam> + IVA / Día</h3>
@@ -300,15 +300,21 @@
             </div>
         </footer>
 
-        <!-- Off canvas Reservar Lugar -->
+        <!-- Off canvas Pase por dia -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasPaseDiario" aria-labelledby="offcanvasPaseDiario">
             <div class="offcanvas-header">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Formulario de inscripción <span class="textHighlighted">pase por día</span></h4>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
             </div>
             <div class="offcanvas-body">
-              <div>
-                <h4 class="offcanvas-title textHighlighted mb-3" id="offcanvasExampleLabel">Formulario de inscripción</h4>
-                <p>Reservá tu pase diario por sólo <strong>2.550 + IVA/ Mes</strong>. Podés pagar usando visa, mastercard, transferencia bancaria o Mercado Pago.</p>
+                <p>Reservá tu pase diario por sólo <strong class="textHighlighted">2.550 + IVA/ Mes</strong>.</p>
+                <p>Podés pagar usando visa, mastercard, transferencia bancaria o Mercado Pago.</p>
                 <hr>
                 <h5 class="my-4">Datos de la reserva</h5>
                 <form action="">
@@ -320,22 +326,25 @@
 
                     <button class="btn btn-primary mt-4">Reservar mi lugar!</button>
                 </form>
-              </div>
             </div>
           </div>
         <!-- End off canvas -->
 
-
-        <!-- Off canvas Reserva Mes -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <!-- Off canvas Reserva Jornada Completa -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasJornadaCompleta" aria-labelledby="offcanvasJornadaCompleta">
             <div class="offcanvas-header">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Formulario de inscripción <span class="textHighlighted">jornada completa</span></h4>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
             </div>
             <div class="offcanvas-body">
-              <div>
-                <h4 class="offcanvas-title textHighlighted mb-3" id="offcanvasExampleLabel">Formulario de inscripción</h4>
-                <p><strong>Nos pone felices de que quieras formar parte de nuestra comunidad Workbox.</strong></p>
-                <p>En breve recibiras un email de uno de nuestros representantes para confirmar el pase solicitado.</p> 
+                <p>Reservá tu membresía por jornada completa a sólo <strong class="textHighlighted">18.000 + IVA/ Mes</strong>.</p>
+                <p>Podés pagar usando visa, mastercard, transferencia bancaria o Mercado Pago.</p>
                 <hr>
                 <h5 class="my-4">Datos de la reserva</h5>
                 <form action="">
@@ -345,23 +354,130 @@
                     <label for="formEmail" class="form-label">Email</label>
                     <input type="email" class="form-control mb-3" id="formEmail" placeholder="pabloarce@gmail.com">
 
-                    <label for="formPhone" class="form-label">Teléfono</label>
-                    <input type="number" class="form-control mb-3" id="formEmail" placeholder="+54 9 2616 234 786">
-
-                    <label for="formMembership" class="form-label">Quiero inscribirme en la membresia</label>
-                    <select class="form-select mb-3" aria-label="Default select example">
-                        <option selected value="1">Pase por el dia</option>
-                        <option value="2">Jornada completa</option>
-                        <option value="3">Media Jornada</option>
-                        <option value="4">Oficina privada</option>
-                        <option value="5">Sala de reuniones</option>
-                        <option value="6">Oficina virtual</option>
-                    </select>
                     <button class="btn btn-primary mt-4">Reservar mi lugar!</button>
                 </form>
-              </div>
             </div>
-          </div>
+        </div>
+        <!-- End off canvas -->
+
+        <!-- Off canvas Reserva Media Jornada -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMediaJornada" aria-labelledby="offcanvasMediaJornada">
+            <div class="offcanvas-header">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="offcanvas-title" id="offcanvasMediaJornada">Formulario de inscripción <span class="textHighlighted">media jornada</span></h4>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <p>Reservá tu membresía por media jornada a sólo <strong class="textHighlighted">11.700 + IVA/ Mes</strong>.</p>
+                <p>Podés pagar usando visa, mastercard, transferencia bancaria o Mercado Pago.</p>
+                <hr>
+                <h5 class="my-4">Datos de la reserva</h5>
+                <form action="">
+                    <label for="formName" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control mb-3" id="formName" placeholder="Pablo Arce">
+
+                    <label for="formEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control mb-3" id="formEmail" placeholder="pabloarce@gmail.com">
+
+                    <button class="btn btn-primary mt-4">Reservar mi lugar!</button>
+                </form>
+            </div>
+        </div>
+        <!-- End off canvas -->
+
+        <!-- Off canvas Reserva Oficina Privada -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasOficinaPrivada" aria-labelledby="offcanvasOficinaPrivada">
+            <div class="offcanvas-header">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="offcanvas-title" id="offcanvasOficinaPrivada">Formulario de inscripción <span class="textHighlighted">oficina privada</span></h4>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <p>Reservá tu membresía para una oficina privada a sólo <strong class="textHighlighted">42.000 + IVA/ Mes</strong>.</p>
+                <p>Podés pagar usando visa, mastercard, transferencia bancaria o Mercado Pago.</p>
+                <hr>
+                <h5 class="my-4">Datos de la reserva</h5>
+                <form action="">
+                    <label for="formName" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control mb-3" id="formName" placeholder="Pablo Arce">
+
+                    <label for="formEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control mb-3" id="formEmail" placeholder="pabloarce@gmail.com">
+
+                    <button class="btn btn-primary mt-4">Reservar mi lugar!</button>
+                </form>
+            </div>
+        </div>
+        <!-- End off canvas -->
+
+        <!-- Off canvas Reserva Sala Reuniones -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSalaReuniones" aria-labelledby="offcanvasSalaReuniones">
+            <div class="offcanvas-header">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="offcanvas-title" id="offcanvasSalaReuniones">Formulario de inscripción <span class="textHighlighted">sala reuniones</span></h4>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <p>Reservá tu membresía para una sala de reuniones a sólo <strong class="textHighlighted">1.700 + IVA/ Mes</strong>.</p>
+                <p>Podés pagar usando visa, mastercard, transferencia bancaria o Mercado Pago.</p>
+                <hr>
+                <h5 class="my-4">Datos de la reserva</h5>
+                <form action="">
+                    <label for="formName" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control mb-3" id="formName" placeholder="Pablo Arce">
+
+                    <label for="formEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control mb-3" id="formEmail" placeholder="pabloarce@gmail.com">
+
+                    <button class="btn btn-primary mt-4">Reservar mi lugar!</button>
+                </form>
+            </div>
+        </div>
+        <!-- End off canvas -->
+
+        <!-- Off canvas Reserva Oficina Virtual -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasOficinaVirtual" aria-labelledby="offcanvasOficinaVirtual">
+            <div class="offcanvas-header">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="offcanvas-title" id="offcanvasOficinaVirtual">Formulario de inscripción <span class="textHighlighted">oficina virtual</span></h4>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <p>Reservá tu membresía para una oficina privada a sólo <strong class="textHighlighted">4.200 + IVA/ Mes</strong>.</p>
+                <p>Podés pagar usando visa, mastercard, transferencia bancaria o Mercado Pago.</p>
+                <hr>
+                <h5 class="my-4">Datos de la reserva</h5>
+                <form action="">
+                    <label for="formName" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control mb-3" id="formName" placeholder="Pablo Arce">
+
+                    <label for="formEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control mb-3" id="formEmail" placeholder="pabloarce@gmail.com">
+
+                    <button class="btn btn-primary mt-4">Reservar mi lugar!</button>
+                </form>
+            </div>
+        </div>
         <!-- End off canvas -->
 
         <!-- JavaScript Bundle with Popper -->
