@@ -1,0 +1,30 @@
+/*--- 404 page ---*/
+
+.blank-page {
+    padding-top: 60px
+}
+
+.blank-image {
+    width: 900px;
+}
+
+
+/* ------ Media Queries ------*/
+
+@media (min-width: 400px) {
+    .blank-image {
+        width: 400px;
+    }
+}
+
+@media (min-width: 600px) {
+    .blank-image {
+        width: 700px;
+    }
+}
+
+@media (min-width: 900px) {
+    .blank-image {
+        width: 800px;
+    }
+}
